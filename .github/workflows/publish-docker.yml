@@ -1,4 +1,4 @@
-name: Publish Docker Image 'jeeetpaul/whatsbot'
+name: Publish Docker Image 'jeeetpaul/whatsApp-Ubot'
 
 on:
   push:
