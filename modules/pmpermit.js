@@ -139,7 +139,7 @@ async function handler(id) {
         } else {
             var out = ({
                 mute: false,
-                msg: `*✋ Wait*\n\nPlease wait until I will get back to Online, Kindly don't send another message.`
+                msg: `*✋ PERINGATAN!*\n\nTolong Tunggu Sampai Owner Saya Online Kembali\n\n-Bot.`
             })
             return out
         }
@@ -157,7 +157,7 @@ async function handler(id) {
             } else {
                 var out = ({
                     mute: false,
-                    msg: `*✋ Wait*\n\nPlease wait until I will get back to Online, Kindly don't send another message. You have ${read.times} warning(s).`
+                    msg: `*✋ Wait*\n\nTolong Tunggu Sampai Owner Saya Kembali Online\n\n-bot.. You have ${read.times} warning(s).`
                 })
                 return out
             }
