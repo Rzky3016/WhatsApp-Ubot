@@ -72,7 +72,7 @@ _Send <code>!help</code> in Anywhere. Or read this [Command's Wiki](https://gith
 
 ### Develop :
 
-_You can develop your own module for Whatsbot. Check out the [wiki](https://github.com/TheWhatsBot/WhatsBot/wiki/Development), It is very easy if you know Javascript._
+_You can develop your own module for WhatsApp Ubot. Check out the [wiki](https://github.com/TheWhatsBot/WhatsBot/wiki/Development), It is very easy if you know Javascript._
 
 ### How it works :
 
