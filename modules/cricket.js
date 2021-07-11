@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function cricket(url) {
     try {
-        const scoredata = (await axios.get(`https://cricket-mskian-whatsbot.vercel.app/cri.php?url=${url}`)).data
+        const scoredata = (await axios.get(`https://cricket-mskian-whatsApp-Ubot.vercel.app/cri.php?url=${url}`)).data
         if (scoredata.success) {
             return {
                 status: true,
