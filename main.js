@@ -111,11 +111,11 @@ client.on('message_create', async (msg) => {
             msg.delete(true)
             exec("cd public && " + msg.body.replace("!term ", ""), (error, stdout, stderr) => {
                 if (error) {
-                    client.sendMessage(msg.to, "*whatsbot~:* ```" + error + "```")
+                    client.sendMessage(msg.to, "*whatsApp Ubot~:* ```" + error + "```")
                 } else if (stderr) {
-                    client.sendMessage(msg.to, "*whatsbot~:* ```" + stderr + "```")
+                    client.sendMessage(msg.to, "*whatsApp Ubot~:* ```" + stderr + "```")
                 } else {
-                    client.sendMessage(msg.to, "*whatsbot~:* ```" + stdout + "```")
+                    client.sendMessage(msg.to, "*whatsApp Ubot~:* ```" + stdout + "```")
                 }
             })
 
@@ -162,7 +162,8 @@ client.on('message_create', async (msg) => {
             msg.delete(true)
             var data = await zee.mainF(msg.body.replace("!zee5 ", ""));
             if (data == "error") {
-                client.sendMessage(msg.to, `🙇‍♂️ *Error*\n\n` + "```Something Unexpected Happened to fetch this Zee5 Content, Maybe it's a wrong url.```")
+                client.sendMessage(msg.to, `🙇‍♂️ *Error*\n\n` + "```Something Unexpected Happened to fetch this Zee5 Content, Maybe it's a wSomething Unexpected Happened to fetch this Zee5 Content, Maybe it's a wrong url.```")
+rong url.```")
             } else {
                 client.sendMessage(msg.to, new MessageMedia(data.image.mimetype, data.image.data, data.image.filename), { caption: `🎥 *${data.title}* _(${data.genre})_\n\n📄 ` + "```" + data.description + "```" + `\n\n*Stream Url* 👇\n${data.url}` });
             }
@@ -481,7 +482,7 @@ client.on('disconnected', (reason) => {
 });
 
 app.get('/', (req, res) => {
-    res.send('<h1>This server is powered by Whatsbot<br><a href="https://github.com/TheWhatsBot/WhatsBot">https://github.com/TheWhatsBot/WhatsBot</a></h1>')
+    res.send('<h1>This server is powered by WhatsApp Ubot<br><a href="https://github.com/Rzky3016/WhatsApp-UBot">https://github.com/Rzky3016/WhatsApp-Ubot</a></h1>')
 })
 
 app.use('/public', express.static('public'), serveIndex('public', { 'icons': true })) // public directory will be publicly available
